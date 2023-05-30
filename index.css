@@ -114,9 +114,9 @@ body {
     position: relative;
   }
   
-  .ag-timeline-block {
-    /* padding: 300px 0; */
-  }
+  /* .ag-timeline-block {
+    padding: 300px 0;
+  } */
   .ag-timeline_title-box {
     padding: 0 0 30px;
   
@@ -473,13 +473,13 @@ span{
 
 /* Eyes Portfolio */
 
-.eyes {
-  /* position: absolute; */
-  /* top: 50%;
+/* .eyes {
+  position: absolute; 
+  top: 50%;
   transform: translateY(-50%);
   width: 100%;
-  text-align: center; */
-}
+  text-align: center;
+} */
 .eye {
   width: 240px;
   height: 120px;
