@@ -516,7 +516,7 @@ span{
 .bi-arrow-up{
   position: absolute;
   color: white;
-  
+  position: fixed;
   border: solid;
   Border-color:white;
   border-radius: 50%;
