@@ -7,22 +7,30 @@
 }
 
 header {
-    grid-column-start: 1;
-    grid-column-end: 7;
-    grid-row:1/2;
-    display: flex;
+    /* display: flex; */
+    grid-column:1/7;
     align-items: center;
     justify-content: center;
     background-color: #000;
 }
 
+
+/* My profile start here */
 .profileContainer {
     display: flex;
+    grid-row:1/2;
     align-items: center;
     padding: 10px;
     text-align: center;
     background-color:rgb(84, 89, 95);
-
+}
+#navbar-example2{
+    display: flex;
+    grid-row:2/3;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    background-color:rgb(84, 89, 95);
 }
 
 .profileImage {
@@ -54,6 +62,7 @@ h1 {
     margin-left: 10px; /* Added to create space between image and heading */
 }
 
+/* Back Ground Time Line Start here */
 .timeLine{
     grid-column-start: 1;
     grid-column-end: 7;
@@ -134,7 +143,7 @@ body {
     background-size: cover;
     -webkit-background-clip: text;
     background-clip: text;
-    text-fill-color: transparent;
+    /* text-fill-color: transparent; */
     color: transparent;
   
     font-size: 80px;
@@ -503,3 +512,14 @@ span{
 
 /* Real time Bus Tracker */
 
+/* Arrow scroll */
+.bi-arrow-up{
+  position: absolute;
+  color: white;
+  
+  border: solid;
+  Border-color:white;
+  border-radius: 50%;
+  top: 800px;
+  right: 100px;
+}
