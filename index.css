@@ -140,9 +140,8 @@
 }
 
 .imageContainer {
-  position: relative; /* Set position to relative for absolute positioning */
-  display: inline-block; /* Make the container inline-block to fit the content */
-  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .projectCenteredPreview {
@@ -201,14 +200,13 @@
   width: 100%;
 }
 .projectPaint {
-  width: 100%;
-
-  text-align: center;
+  margin-left: 30px;
+  width: 90%;
 }
 .projectDescription {
   width: 100%;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .projectName {
   font-size: 25px;
