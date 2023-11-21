@@ -1,17 +1,17 @@
-class introComponent extends HTMLElement{
-    constructor(){
-        super();
-        
-        const title = this.getAttribute('title');
+class introComponent extends HTMLElement {
+  constructor() {
+    super();
 
-        this.innerHTML = `
+    const title = this.getAttribute("title");
+
+    this.innerHTML = `
             <div class="Profile">
                 <div class="introDcutionContent">
                     <p class="nameIntro">Hi! My name is</p>
                     <h1>Hyuntae Kim</h1>
                     <h2>I create web-app based application</h2>
                     <br>
-                    <span class="introDcution">I am an Full-Stack Developer. Currently, studying in Boston College.</span>
+                    <span class="introDcution">I want to become a Full-Stack Developer. Currently, studying in Boston College.</span>
                     <br>
                     <span class="introDcution">I am always welcome to all positions. Anyone can check my resume and call me!</span>
                     <br>
@@ -33,7 +33,7 @@ class introComponent extends HTMLElement{
                 </div>
             </div>
         `;
-    }
+  }
 }
 
-customElements.define('intro-component',introComponent)
+customElements.define("intro-component", introComponent);
