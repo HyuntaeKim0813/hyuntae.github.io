@@ -1,12 +1,10 @@
-class HeaderComponent  extends HTMLElement{
-        constructor(){
-            super();
-        }
-        
+class HeaderComponent extends HTMLElement {
+  constructor() {
+    super();
+  }
 
-    set header(header){
-        
-        this.innerHTML = `
+  set header(header) {
+    this.innerHTML = `
             <div class="rotate">
 
                 <nav class="navbar">
@@ -20,7 +18,7 @@ class HeaderComponent  extends HTMLElement{
                         <a class="nav-link" href="#Certificate">${header.secondMenu}</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#Stacks">${header.thirdMenu}</a>
+                        <a class="nav-link" href="#portfolios">${header.thirdMenu}</a>
                         </li>
                         <li class="nav-item">
                         <a class="nav-link" href="#contact">${header.forthMenus}</a>
@@ -30,7 +28,7 @@ class HeaderComponent  extends HTMLElement{
 
             </div>
         `;
-    }
+  }
 }
 
-customElements.define('header-component', HeaderComponent );
+customElements.define("header-component", HeaderComponent);
