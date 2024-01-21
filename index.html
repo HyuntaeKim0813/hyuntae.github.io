@@ -387,10 +387,11 @@
         </div>
     </section>
 
-    <div id="contact" class="form">
-      <h3 class="contact-title">Contact</h3>
+    <h3 class="contact-title">Contact</h3>
 
-      <div class="personalInfo-section">
+    <div id="contact" class="contact__section">
+
+      <div class="myInfo__section">
         <div class="personalInfo-sub">
           <img class="personalInfo-faceImg" src="./images/myFaceImg/Myface.jpg" />
           <div>
@@ -399,19 +400,25 @@
           </div>
         </div>
         <div>
-          <i class="fa-solid fa-location-dot"></i>
-          <h5>Current Location: Boston MA</h5>
-          <i class="fa-solid fa-envelope"></i>
-          <h5>Email: hyuntaenyc@gmail.com</h5>
+          <div style="display: flex; align-items: center;">
+            <i class="fa-solid fa-location-dot"></i>
+            <h5>Current Location: Boston MA</h5>
+          </div>
+          <div style="display: flex; align-items: center;">
+            <i class="fa-solid fa-envelope"></i>
+            <h5>Email: hyuntaenyc@gmail.com</h5>
+          </div>
         </div>
       </div>
 
-      <form class="contact-contianer" onsubmit="sendMail(); reset(); return false;">
-        <div class="name-email-container">
-          <p>Your name</p>
-          <input type="text" id="name" placeholder="" class="contact-main" required />
-        
-          <p>Your Email</p>
+      <form class="contact__contianer" onsubmit="sendMail(); reset(); return false;">
+       
+          <div style="display: flex;">
+            <span class="contant--text">Your name: </span>
+            <input type="text" id="name" placeholder="" class="contact--main" required />
+          </div>
+          <div style="display: flex;">
+          <span class="contant--text">Your Email:</span>
           <input
             type="email"
             id="email"
@@ -419,18 +426,18 @@
             class="contact-main"
             required
           />
-  
         </div>
-       
-        <p>Phone(Not Required)</p>
-        <input type="text" id="phone" placeholder="" class="contact-main"/>
-        
-        <p>message</p>
+        <div style="display: flex;">
+          <span class="contant--text">Phone:</span>
+          <input type="text" id="phone" placeholder="(Not Required)" class="contact--main"/>
+        </div>
+        <br>
+        <span>message</span>
         <textarea
           id="message"
           rows="4"
           placeholder="I am open to anything!"
-          class="contact-main"
+          class="contact--message"
         ></textarea>
         <button type="submit" class="conatact-button">Send</button>
       </form>
