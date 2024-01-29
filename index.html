@@ -1,31 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <link rel="stylesheet" href="time.css"> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
     <script
       src="https://kit.fontawesome.com/daeec6cd3d.js"
       crossorigin="anonymous"
     ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="index.css" />
-
-    <script src="index.js"></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
@@ -35,467 +24,672 @@
         emailjs.init("MaxFe5Uofz9WKuSkw");
       })();
     </script>
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link
+      rel="stylesheet"
+      href="assets/css/color-1.css"
+      class="alternate-style"
+      title="color-1"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/color-2.css"
+      class="alternate-style"
+      title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/color-3.css"
+      class="alternate-style"
+      title="color-3"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/color-4.css"
+      class="alternate-style"
+      title="color-4"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/color-5.css"
+      class="alternate-style"
+      title="color-5"
+      disabled
+    />
+    <link rel="stylesheet" href="assets/css/style-switcher.css" />
+
+    <title>Kim' Dev</title>
   </head>
-
   <body>
-    <header>
-      <a class="nav--link-white" href="#Mainpage">Kim's Dev</a>
-
-      <ul>
-        <li>
-          <a class="nav--link-white" href="#Progrects">About</a>
-        </li>
-        <li>
-          <a class="nav--link-white" href="#Certificate">Skill</a>
-        </li>
-        <li>
-          <a class="nav--link-white" href="#portfolios">Projects</a>
-        </li>
-        <li>
-          <a class="nav--link-white" href="#contact">Education</a>
-        </li>
-        <li>
-          <a class="nav--link-white" href="#contact">Certifications</a>
-        </li>
-        <li>
-          <a class="nav--link-white" href="#contact">Contact</a>
-        </li>
-      </ul>
-      <!-- <i class="fa-solid fa-angle-down fa-3x"  onclick="navbarToggle();"></i> -->
-    </header>
-
-    <section class="grid">
-      <div id="speech-bubbles">
-        <h1>Intro</h1>
-        <div>
-          <p>This is Hyuntae Kim's Git-Hub Blog.</p>
-          <p>
-            <strong>
-              Prompt: We are not what we know but what we are willing to learn.
-            </strong>
-          </p>
+    <!--==================== MAIN ====================-->
+    <main class="main-container">
+      <!--==================== Aside Start ====================-->
+      <aside class="aside">
+        <div class="logo">
+          <a href="#"><span>Kim'</span>Dev</a>
         </div>
-      </div>
-
-      <div class="main-contants">
-        <h2 class="introduction--content">Hi! I'm Kim</h2>
-        <p class="introduction--content">
-          I create a WEB-APP-based application. For Web and mobile applications,
-          utilize JS/ReactJS/NodeJS/React Native and other libraries and
-          frameworks. Always look forward to new challenges and solving them! Be
-          progressive and ambitious.
-        </p>
-        <p class="introduction--content">Currently, Looking for job!</p>
-
-        <a
-          class="introduction__icon introduction__icon--linkedin"
-          href="https://www.linkedin.com/in/hyuntae-kim-bb47791b7/"
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            class="bi bi-linkedin"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-            />
-          </svg>
-        </a>
-
-        <a
-          class="introduction__icon introduction__icon--github"
-          href="https://github.com/HyuntaeKim0813?tab=repositories"
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            class="bi bi-github"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-            />
-          </svg>
-        </a>
-
-        <a
-          class="introduction__icon introduction__icon--youtube"
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="25"
-            height="25"
-            fill="currentColor"
-            class="bi bi-youtube"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"
-            />
-          </svg>
-        </a>
-
-        <a
-          href="resumeCertificate/resume/HKResume.pdf"
-          target="_blank"
-          class="introduction__icon introduction__icon--resume"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            class="bi bi-file-person"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h8zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"
-            />
-            <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-          </svg>
-          <span>Resume</span>
-        </a>
-
-        <a
-          class="introduction__icon introduction__icon--resume"
-          href="#contact"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="30"
-            height="30"
-            fill="currentColor"
-            class="bi bi-telephone"
-            viewBox="0 0 16 16"
-          >
-            <path
-              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-            />
-          </svg>
-          <span>Contact</span>
-        </a>
-      </div>
-      <img
-        src="./images/backGroundimgFile/AdobeStock_597463789.png"
-        alt=""
-        class="introduction--img"
-      />
-    </section>
-
-    <section class="grid skill-bg">
-      <div id="speech-bubbles">
-        <h2>Skills:</h2>
-        <div>
-          <p class="skill--inbubble--value">
-            My personal value is Learning never <strong>betrays</strong> me.
-          </p>
-          <p class="skill--inbubble--text">
-            These are the representative stacks that I knew, and I am still
-            learning more & eligible to learn anything needed!
-          </p>
+        <div class="nav-toggler">
+          <span></span>
         </div>
+        <ul class="nav">
+          <li>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
+          </li>
+          <li>
+            <a href="#services"><i class="fa fa-list"></i>Services</a>
+          </li>
+          <li>
+            <a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Aside end -->
+      <!-- main content start -->
+      <div class="main-content">
+        <!-- home section start -->
+        <section class="home section" id="home">
+          <div class="container">
+            <div class="row">
+              <div class="home-info padd-15">
+                <h3 class="hello">
+                  Hello, my name is <span class="name">Hyuntae Kim</span>
+                </h3>
+                <h3 class="my-profession">
+                  I' m a <span class="typing">Full-stack developer</span>
+                </h3>
+                <p>
+                  I'm going to graduate on 2024.May. My expertie is to create
+                  creative web and mobile application, and many more...
+                </p>
+                <a href="#contact" class="btn hire-me">More About Me</a>
+              </div>
+              <div class="home-img padd-15">
+                <img src="images/Myface.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- home section end -->
+
+        <!-- About Section Start -->
+        <section class="about section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>About Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <h3>
+                      I'm Hyuntae Kim and <span>Full-Stack developer</span>
+                    </h3>
+                    <p>
+                      Eligible to speak <strong>Korean</strong> and
+                      <strong>English</strong> fluently. These are the
+                      representative stacks that I knew, and I am still learning
+                      more & eligible to learn anything needed!
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="personal-info padd-15">
+                    <div class="row">
+                      <div class="info-item padd-15">
+                        <p>Birthday : <span>13 Aug 1997</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Age : <span>25</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Website : <span>xxx.xxxxxxx.com</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Email : <span>hyuntaenyc@gmail.com</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Degree : <span>Information System</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Phone : <span>+01 929 431 4453</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>City : <span>MA. Boston</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Job Status : <span>Currently Looking</span></p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="buttons padd-15">
+                        <a
+                          href="images/CV/HKResume.pdf"
+                          class="btn"
+                          target="_blank"
+                          >Download CV</a
+                        >
+                        <a href="#contact" class="btn hire-me">Hire Me</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skills padd-15">
+                    <div class="row">
+                      <div class="skill-item padd-15">
+                        <h5>JS</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">76%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>HTML</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">86%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>CSS</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">76%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Python</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">76%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>Bootstrap</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">76%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>ReactJS</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">86%</div>
+                        </div>
+                      </div>
+                      <div class="skill-item padd-15">
+                        <h5>NodeJS</h5>
+                        <div class="progress">
+                          <div class="progress-in" style="width: 76%"></div>
+                          <div class="skill-percent">86%</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                      <div class="timeline-box">
+                        <div class="timeline shadow-dark">
+                          <!-- ==== timeline item ====-->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2021 -
+                              2024.May(Expected)
+                            </h3>
+                            <h4 class="timeline-title">
+                              (Boston College) BA In Information System
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s,
+                            </p>
+                          </div>
+                          <!-- ==== timeline item ====-->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2021 -
+                              2024(Completed)
+                            </h3>
+                            <h4 class="timeline-title">
+                              (Boston College) Minor In Finance
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s,
+                            </p>
+                          </div>
+                          <!-- ==== timeline item ====-->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2023 - 2023
+                            </h3>
+                            <h4 class="timeline-title">MIT MERN STACK</h4>
+                            <p class="timeline-text">
+                              Skills/Knowledge: Web Development, Back-End
+                              Development, CI/CD, Front-End Development and
+                              React, TDD
+                            </p>
+                          </div>
+
+                          <!-- ==== timeline item ====-->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2020 - 2021
+                            </h3>
+                            <h4 class="timeline-title">
+                              Columbia Fintech Boot Camp
+                            </h4>
+                            <p class="timeline-text">
+                              Learned: AI Trading, Algorithmic Trading, Deep
+                              Learning, NLP, API, AWX, Machine Learning, Data
+                              Visualization, BlockChain
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+                    <div class="row">
+                      <div class="timeline-box">
+                        <div class="timeline shadow-dark">
+                          <!-- ==== timeline item ====-->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2020-2021
+                            </h3>
+                            <h4 class="timeline-title">
+                              BA In Information System
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s,
+                            </p>
+                          </div>
+                          <!-- ==== timeline item ====-->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2015
+                            </h3>
+                            <h4 class="timeline-title">
+                              BA In Information System
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s,
+                            </p>
+                          </div>
+                          <!-- ==== timeline item ====-->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h3 class="timeline-date">
+                              <i class="fa fa-calendar"></i>2013-2015
+                            </h3>
+                            <h4 class="timeline-title">
+                              BA In Information System
+                            </h4>
+                            <p class="timeline-text">
+                              Lorem Ipsum is simply dummy text of the printing
+                              and typesetting industry. Lorem Ipsum has been the
+                              industry's standard dummy text ever since the
+                              1500s,
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Section End -->
+        <!-- Service section start -->
+        <section class="service section" id="services">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Services</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-mobile-alt"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil velit ab itaque.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item end -->
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-laptop-code"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil velit ab itaque.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item end -->
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-palette"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil velit ab itaque.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item end -->
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil velit ab itaque.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item end -->
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil velit ab itaque. h
+                  </p>
+                </div>
+              </div>
+              <!-- Service item end -->
+              <!-- Service item start -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon">
+                    <i class="fa fa-bullhorn"></i>
+                  </div>
+                  <h4>Web Design</h4>
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nihil velit ab itaque.
+                  </p>
+                </div>
+              </div>
+              <!-- Service item end -->
+            </div>
+          </div>
+        </section>
+        <!-- Service section end -->
+        <!-- Portpoilo section start -->
+        <section class="portfolio section" id="portfolio">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Portfolio</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="portfolio-heading padd-15">
+                <h2>My Last Projects :</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- portfolio item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio-1.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio item end -->
+              <!-- portfolio item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio-2.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio item end -->
+              <!-- portfolio item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio-3.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio item end -->
+              <!-- portfolio item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio-4.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio item end -->
+              <!-- portfolio item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio-5.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio item end -->
+              <!-- portfolio item start -->
+              <div class="portfolio-item padd-15">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img src="images/portfolio/portfolio-6.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+              <!-- portfolio item end -->
+            </div>
+          </div>
+        </section>
+        <!-- Portpoilo section end -->
+        <!-- Contact section start -->
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Contact</h2>
+              </div>
+            </div>
+            <h3 class="contact-title padd-15">Any Questions ?</h3>
+            <h4 class="contact-sub-title padd-15">WELCOME TO ASK !</h4>
+            <div class="row">
+              <!-- Contact info item start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-phone"></i></div>
+                <h4>Call Us On</h4>
+                <p>+01 929 431 4453</p>
+              </div>
+              <!-- Contact info item end -->
+              <!-- Contact info item start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+                <h4>Office</h4>
+                <p>MA. Boston</p>
+              </div>
+              <!-- Contact info item end -->
+              <!-- Contact info item start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-envelope"></i></div>
+                <h4>Email</h4>
+                <p>hyuntaenyc@gmail.com</p>
+              </div>
+              <!-- Contact info item end -->
+              <!-- Contact info item start -->
+              <div class="contact-info-item padd-15">
+                <div class="icon"><i class="fa fa-globe-europe"></i></div>
+                <h4>Website</h4>
+                <p>xxx.xxxxxxx.com</p>
+              </div>
+              <!-- Contact info item end -->
+            </div>
+            <h3 class="contact-title padd-15">SEND ME AN EMAIL !</h3>
+            <h4 class="contact-sub-title padd-15">
+              I'M VERY RESPONSIVE TO MESSAGE
+            </h4>
+            <!-- ==== contact form ==== -->
+            <div class="row">
+              <form
+                class="contact-form padd-15"
+                onsubmit="sendMail(); reset(); return false;"
+              >
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Name"
+                        id="name"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Email"
+                        id="email"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Subject"
+                        id="phone"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea
+                        name="hello"
+                        class="form-control"
+                        placeholder="Message"
+                        id="message"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <!-- Contact section end -->
       </div>
-
-      <img
-        src="./images/backGroundimgFile/introduction__img.png"
-        ;
-        class="introduction--img"
-      />
-      <ul class="dev-icons">
-        <li class="software-skill-inline">
-          <i class="fab fa-html5"></i>
-          <p>html-5</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-css3-alt"></i>
-          <p>css3</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-sass"></i>
-          <p>sass</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-js"></i>
-          <p>JavaScript</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-react"></i>
-          <p>ReactJS</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-node"></i>
-          <p>nodejs</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-npm"></i>
-          <p>npm</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fa-solid fa-database"></i>
-          <p>sql-database</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-aws"></i>
-          <p>aws</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fa-solid fa-fire"></i>
-          <p>firebase</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-python"></i>
-          <p>python</p>
-        </li>
-        <li class="software-skill-inline">
-          <i class="fab fa-docker"></i>
-          <p>docker</p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- project -->
-    <section class="grid">
-      <div id="speech-bubbles">
-        <h2>Projects:</h2>
-        <div>
-          <p>
-            I love to build new things with new technologies. I never hesitate
-            to learn new things.
-          </p>
-          <p>
-            <strong>
-              Prompt: The only limit to our realization of tomorrow will be our
-              doubts of today.
-            </strong>
-          </p>
-        </div>
+      <!-- main content end -->
+    </main>
+    <!-- main container end -->
+    <!-- style switcher start -->
+    <div class="style-switcher">
+      <div class="style-switcher-toggler s-icon">
+        <i class="fas fa-cog fa-spin"></i>
       </div>
-
-      <div class="project-card">
-        <p>Preview Image</p>
-        <img
-          src="./images/projectPreview/BadBank-transformed.png"
-          class="project-image"
-        />
+      <div class="day-night s-icon">
+        <i class="fas"></i>
       </div>
-
-      <div class="main-contants">
-        <h3>1. Bad Bank Application</h3>
-        <p class="introduction--content">
-          <strong>Tech-Stacks:</strong>HTML,JS,CSS, Bootstrap, Express,MongoDB,
-        </p>
-        <p class="introduction--content">
-          <strong>History:</strong> While Trappist breweries have a tradition of
-          brewing a lower-strength beer as a monk’s daily ration, the bitter,
-          pale beer this style describes is a relatively modern invention
-          reflecting current tastes. Westvleteren first brewed theirs in 1999,
-          but replaced older lower-gravity products.
-        </p>
-        <a
-          href="https://github.com/HyuntaeKim0813/BadBankingApplication"
-          target="_blank"
-          class="project-link"
-          >Git-Hub Repo</a
-        >
-      </div>
-    </section>
-
-    <div class="grid skill-bg">
-      <div id="speech-bubbles">
-        <h1 class="nav__title">Education:</h1>
-        <div>
-          <p>I think education is only a small part of understanding others.</p>
-          <p>
-            <strong> Prompt:Failure is success in progress </strong>
-          </p>
-        </div>
-      </div>
-
-      <!-- <h1 class="certificate-ing">On Going</h1> -->
-      <div class="education-flex">
-        <img
-          src="./images/backGroundimgFile/BCLogo.jpg"
-          class="education--img"
-        />
-
-        <div class="education__card--right">
-          <h3 class="education__card--title">Boston College - On Going</h3>
-          <h5>Bachelor of Science in Information System</h5>
-          <p>September 2021 - May 2024(Expected)</p>
-          <p>Relevent Course:</p>
-        </div>
-      </div>
-
-      <div class="education-flex">
-        <img
-          src="./images/backGroundimgFile/BCLogo.jpg"
-          class="education--img"
-        />
-
-        <div class="education__card--right">
-          <h3 class="education__card--title">Boston College - Completed</h3>
-          <h5>Minor in Finance</h5>
-          <p>September 2021 - December 2022</p>
-          <p>Relevent Courses:</p>
-        </div>
+      <h4>Theme Colors</h4>
+      <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
       </div>
     </div>
-
-    <div class="grid">
-      <div id="speech-bubbles">
-        <h2>Achievements:</h2>
-        <div>
-          <p>
-            These are some awesome progress I made including: Achievements,
-            Certifications, Award!
-          </p>
-          <p>
-            <strong
-              >Prompt: Strength does not come from winning. Your struggles
-              develop your strengths. When you go through hardships and decide
-              not to surrender, that is strength.</strong
-            >
-          </p>
-        </div>
-      </div>
-
-      <div class="certificate__card">
-        <a href="">
-          <img
-            src="./images/certificateimgFile/ColumbiaFintechCertificate.png"
-            class="certificate__card--img--resize"
-          />
-
-          <div class="certificate__detail">
-            <h5 class="certificate__card--title">Columbia Fintech BootCamp</h5>
-            <p class="certificate__card--subtitle">Outcomes:</p>
-            <span class="certificate--skill">Certification</span>
-            <span class="certificate--skill">High GPA</span>
-            <span class="certificate--skill">Python</span>
-            <span class="certificate--skill">BlockChain</span>
-            <span class="certificate--skill">AWS</span>
-            <span class="certificate--skill">SQL</span>
-          </div>
-        </a>
-      </div>
-
-      <div class="certificate__card">
-        <a
-          href="https://certificates.emeritus.org/876cd0c2-ae72-4ca4-b1cb-92dc617f74af#gs.1sr27s"
-          target="blank"
-          class="certificate-link"
-        >
-          <div class="certificate__card--img">
-            <img
-              src="./images/certificateimgFile/MITxPro.png"
-              alt=""
-              class="certificate__card--img--resize"
-            />
-          </div>
-          <div class="certificate__detail">
-            <h5 class="certificate__card--title">
-              MITxPro:Full Stack Development with MERN
-            </h5>
-            <p class="certificate__card--subtitle">
-              HTML, CSS, JS, ReactJS. MERN stacks.
-            </p>
-          </div>
-          <div class="certificate__techContainer">
-            <span class="certificate--skill">Certification</span>
-            <span class="certificate--skill">High GPA</span>
-            <span class="certificate--skill">Web Development</span>
-            <span class="certificate--skill">Back-End Development</span>
-            <span class="certificate--skill"
-              >Build test and deploy a web application</span
-            >
-            <span class="certificate--skill"
-              >Front-End Development and React</span
-            >
-            <span class="certificate--skill">CI/CD</span>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div id="speech-bubbles">
-      <h1>Language:</h1>
-      <h2 class="lang__title">Korean</h2>
-      <h2 class="lang__title">(Native),</h2>
-
-      <h3 class="lang__level">English</h3>
-      <h3 class="lang__level">(Fluent)</h3>
-    </div>
-
-    <div class="grid skill-bg">
-      <div class="myInfo__section">
-        <div class="personalInfo-sub">
-          <img
-            class="personalInfo-faceImg"
-            src="./images/myFaceImg/Myface.jpg"
-          />
-          <div>
-            <h4>Hyuntae Kim | Lonnie Kim</h4>
-            <h4>Personal Value: Never Give Up</h4>
-          </div>
-        </div>
-        <div>
-          <div style="display: flex; align-items: center">
-            <i class="fa-solid fa-location-dot"></i>
-            <h5>Current Location: Boston MA</h5>
-          </div>
-          <div style="display: flex; align-items: center">
-            <i class="fa-solid fa-envelope"></i>
-            <h5>Email: hyuntaenyc@gmail.com</h5>
-          </div>
-        </div>
-      </div>
-
-      <form
-        class="contact__contianer"
-        onsubmit="sendMail(); reset(); return false;"
-      >
-        <p class="contant--text">Your name:</p>
-        <input
-          type="text"
-          id="name"
-          placeholder=""
-          class="contact--main"
-          required
-        />
-
-        <p class="contant--text">Your Email:</p>
-        <input
-          type="email"
-          id="email"
-          placeholder=""
-          class="contact-main"
-          required
-        />
-
-        <p class="contant--text">Phone:</p>
-        <input
-          type="text"
-          id="phone"
-          placeholder="(Not Required)"
-          class="contact--main"
-        />
-
-        <p>message</p>
-        <textarea
-          id="message"
-          rows="4"
-          placeholder="I am open to anything!"
-          class="contact--message"
-        ></textarea>
-        <button type="submit" class="conatact-button">Send</button>
-      </form>
-    </div>
+    <!-- style switcher end -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+      integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/style-switcher.js"></script>
   </body>
 </html>
